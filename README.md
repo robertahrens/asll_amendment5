@@ -24,7 +24,6 @@ The analysis was run on confidential fishery observer data, which are **not** in
 
 ```bash
 Rscript R/make_sim_data.R     # writes data/sim_as_data.Rdata
-Rscript R/asll_dereg_risk.R   # uses the simulated data by default
 ```
 
 The simulated data have the same structure and columns as the observer data, with fictitious trip, set, and permit identifiers. Catches are generated from known depth relationships with no period effect, so the code should recover period effects close to one. A few sets have deliberately corrupted gear records so the screening step has something to flag.

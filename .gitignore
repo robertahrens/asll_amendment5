@@ -1,0 +1,6 @@
+as_data.Rdata
+dereg_risk/
+presentation/
+.Renviron
+.Rhistory
+document/*.docx

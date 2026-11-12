@@ -44,7 +44,9 @@ R (≥ 4.1) with `dplyr`, `tidyr`, `purrr`, `mgcv`, `ggplot2`, and `here`. Resul
 
 ## Contact
 
-[Robert Ahrens, NOAA-PIFSC, Robert.Ahrens@noaa.gov]
+Robert Ahrens
+NOAA-PIFSC
+Robert.Ahrens@noaa.gov
 
 ## Disclaimer
 

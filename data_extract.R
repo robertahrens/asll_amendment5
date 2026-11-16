@@ -59,14 +59,14 @@ tmp <- as_catch %>%
   )
 
 keep_cols <- c("TRIP_NUM", "SET_NUM", "PERMIT_NUM.x", "HAUL_BEGIN_DTM.x", 
-        "MAINLN_LEN_RPTD", "BRNCHLN_LEN", "NUM_FLTS", "HKS_PER_FLT",
+        "MAINLN_LEN_RPTD", "FLTLN_LEN","BRNCHLN_LEN", "NUM_FLTS", "HKS_PER_FLT",
         "NUM_HKS_SET", "FLT_NUM", "HK_NUM", "ENGLISH_NAME.x")
 
 new_names <- c("TRIP_NUM", "SET_NUM", "PERMIT_NUM", "HAUL_BEGIN_DTM", 
-        "MAINLN_LEN_RPTD", "BRNCHLN_LEN", "NUM_FLTS", "HKS_PER_FLT",
+        "MAINLN_LEN_RPTD", "FLTLN_LEN", "BRNCHLN_LEN", "NUM_FLTS", "HKS_PER_FLT",
         "NUM_HKS_SET", "FLT_NUM", "HK_NUM", "ENGLISH_NAME")       
 
-species <- c("ALBACORE", "OCEANIC WHITETIP SHARK", "GREEN SEA TURTLE", "WAHOO", "MAHIMAHI")   
+species <- c("ALBACORE", "OCEANIC WHITETIP SHARK", "SILKY SHARK", "GREEN SEA TURTLE", "WAHOO", "MAHIMAHI")   
 
 as_data <- tmp %>%
   filter(ENGLISH_NAME.x %in% species) %>%

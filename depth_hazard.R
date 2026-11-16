@@ -25,6 +25,7 @@ library(ggplot2)
 
 # ---------------------------------------------------------------- settings --
 working_dir <- "set your working dir"
+working_dir <- getwd()
 
 data_file  <- file.path(working_dir,"as_data.Rdata")
 out_dir    <- file.path(working_dir,"dereg_risk")
@@ -34,9 +35,9 @@ phi_deg     <- 68
 # Set "shoaled" to the multiplier used to create PRED_DEPTH_68_SHOAL
 depth_mults <- c(catenary = 1, shoaled = 0.70)
 blank_m     <- 70
-species     <- c("ALBACORE", "WAHOO", "OCEANIC WHITETIP SHARK",
+species     <- c("ALBACORE", "WAHOO", "OCEANIC WHITETIP SHARK", "SILKY SHARK",
                  "MAHIMAHI", "GREEN SEA TURTLE")
-rare_species  <- "GREEN SEA TURTLE"
+rare_species  <- c("GREEN SEA TURTLE")
 current_years <- NULL      # e.g. 2019:2025 to define the "current fleet"
 n_draws       <- 2000
 set.seed(2026)
